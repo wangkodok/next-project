@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.cmn_mainpage_title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #000;
+}
+
+.cmn__maintitle {
+  font-size: 24px;
+  font-weight: bold;
+}
