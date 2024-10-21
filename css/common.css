@@ -1,14 +1,350 @@
 @charset "utf-8";
 
-.cmn_mainpage_title {
-  font-size: 24px;
-  font-weight: bold;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #000;
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+#wrap {
+  letter-spacing: -0.75px;
 }
 
-.cmn__maintitle {
+#skip {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  list-style: none;
+  font-size: 1.15em;
+  top: -10.5em;
+  left: 0;
+  z-index: 999;
+}
+
+:focus-visible {
+  outline: 3px dotted #f00;
+}
+
+#skip a:focus-visible,
+#skip a:active {
+  position: absolute;
+  padding-top: 0.5em;
+  width: 100%;
+  height: 2em;
+  top: 10.5em;
+  z-index: 999;
+  text-align: center;
+  color: #fff;
+  background: #333;
+  overflow: visible;
+  clip: unset;
+  outline: 3px dotted #f00;
+  margin: 2px -2px 0;
+}
+
+.contents-inner {
+  width: 1152px;
+  padding: 0 24px 0 24px;
+  margin: 0 auto;
+}
+
+.contents-title {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
+}
+
+.header-gnb {
+  position: relative;
+  line-height: 48px;
+}
+
+.header-gnb .logo {
+  width: 106px;
+  float: left;
+  margin-right: 52px;
+}
+
+.header-gnb .logo a {
+  display: block;
+  width: 106px;
+  height: 26px;
+  background: url("../image/icon_set_common.png") no-repeat -5px -166px;
+  margin-top: 9px;
+  margin-bottom: 13px;
+}
+
+.header-gnb .nav-bar {
+  float: left;
+}
+
+.header-gnb .list li {
+  padding: 0 5px;
+  margin: 0 5px;
+  float: left;
+  font-weight: 700;
+}
+
+.header-gnb .login-area {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header-gnb .login-area a {
+  display: block;
+  float: left;
+  padding: 0 5px;
+  margin: 0 5px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.lnb {
+  position: relative;
+}
+
+.lnb .logo {
+  width: 177px;
+  background-color: #fff;
+  float: left;
+  margin: 31px 0;
+  display: block;
+  width: 177px;
+  height: 58px;
+  background: url("../image/logo_new_2019.png") no-repeat 0px 7px;
+}
+
+.lnb .search {
+  float: left;
+  margin: 40px 0 0 73px;
+}
+
+.lnb form {
+  position: relative;
+  display: block;
+  border: 3px solid #2292e9;
+  width: 494px;
+  height: 36px;
+  line-height: 36px;
+  float: left;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.lnb form input[type="text"] {
+  width: 472px;
+  margin-top: 9px;
+  font-size: 14px;
+  letter-spacing: 0.175px;
+  border: none;
+}
+
+.lnb form input[type="text"].on {
+  margin-top: 7px;
+  font-size: 16px;
+}
+
+.lnb form input[type="text"]::placeholder {
+  color: #2292e9;
+}
+
+.lnb form .input-btn {
+  width: 21px;
+  height: 21px;
+  background: url("../image/icon_set_common.png") no-repeat -40px -105px;
+  border: none;
+  position: absolute;
+  top: 8px;
+  right: 7px;
+}
+
+.header-lang {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+select {
+  appearance: none;
+  border-radius: 0;
+  background: url("../image/bg_select_arrow_m.png") no-repeat no-repeat 96%
+    center;
+  background-size: 8px auto;
+}
+
+.header-lang .city {
+  float: left;
+  width: 80px;
+  height: 21px;
+  border-color: #afcfea;
+  color: #1e6cb3;
+  font-size: 12px;
+  padding: 0 0 0 2px;
+  box-sizing: border-box;
+  line-height: 21px;
+}
+
+.header-lang .city-btn {
+  float: left;
+  width: 30px;
+  font-size: 11px;
+  color: #fff;
+  background-color: #1e6cb3;
+  border: 0;
+  height: 21px;
+  line-height: 20px;
+}
+
+.footer .family-site {
+  margin-bottom: 20px;
+}
+
+.footer .family-site li {
+  width: calc((100% / 5) + 1px);
+  float: left;
+  margin-right: -1px;
+}
+
+.footer .family-site button {
+  width: 100%;
+  padding: 15px 0 15px;
+  border: 1px solid #d0d0d0;
+  background: #f7f7f7;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.footer .family-site span {
+  position: relative;
+  padding-right: 20px;
+}
+
+.footer .family-site span::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 0px;
+  height: 7px;
+  width: 7px;
+  border-style: solid;
+  border-color: #373737;
+  border-width: 0px 2px 2px 0px;
+  transform: rotate(-135deg);
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform-origin: center center;
+}
+
+.footer .family-site span.none {
+  padding: 0;
+}
+
+.footer .family-site span.none::after {
+  content: none;
+}
+
+.footer .info-site {
+  position: relative;
+  padding: 18px 0 22px;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer .info-site li {
+  /* position: relative; */
+  float: left;
+  margin-right: 8px;
+  padding-right: 10px;
+  border-right: 1px solid #dcdcdc;
+}
+
+/* .footer .info-site li::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0;
+  width: 1px;
+  background-color: #dcdcdc;
+} */
+
+.footer .info-site li:last-child {
+  border-right: none;
+}
+
+.footer .info-site a {
+  display: block;
+  font-size: 12px;
+  color: #636363;
+  line-height: 14px;
+  letter-spacing: -0.5px;
+}
+
+.footer .info-site .bold {
+  font-weight: 700;
+  color: #000;
+}
+
+.footer .info-site .item-kakao-ch {
+  position: absolute;
+  top: calc(50% + 0px);
+  transform: translate(0, -50%);
+  right: 417px;
+  width: 114px;
+  height: 24px;
+  background: url("../image/ico_footer_sns.png") no-repeat 0 -30px;
+}
+
+.footer .service-info .inquiry,
+.footer address {
+  float: left;
+}
+
+.footer .service-info {
+  position: relative;
+  padding: 22px 0 17px;
+}
+
+.footer .service-info .inquiry {
+  width: 108px;
+  height: 45px;
+  margin-right: 40px;
+  background: url("../image/icon_set_common.png") no-repeat -180px 0;
+}
+
+.footer address {
+  margin-top: -1px;
+}
+
+.footer address p {
+  font-size: 12px;
+  color: #636363;
+  margin-bottom: 6px;
+  letter-spacing: -0.6px;
+}
+
+.footer address .map {
+  font-size: 11px;
+  color: #636363;
+}
+
+.footer address .call {
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.footer address .seoul-talk {
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  transform: translate(0, -50%);
+  width: 68px;
+  height: 26px;
+  background: url("../image/ico_seoul_talk.png") no-repeat;
+}
+
+.footer address .copyright {
+  font-size: 11px;
+}
+
+.footer .service-info .accessibility-logo {
+  position: absolute;
+  top: 20px;
+  right: 0;
 }

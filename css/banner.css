@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+.sec-banner {
+  background-color: #eff4f8;
+  margin: 0 0 48px 0;
+}
+
+.contents-banner {
+  padding: 20px 0;
+}
+
+.contents-banner .item {
+  float: left;
+}
+
+.contents-banner .item figure {
+  position: relative;
+}
+
+.contents-banner .item figure::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0;
+  width: 1px;
+  height: 60px;
+  background-color: #dbdbdb;
+}
+
+.contents-banner .item:first-child figure::after {
+  content: none;
+}

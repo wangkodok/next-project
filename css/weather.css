@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+.weather {
+  position: relative;
+  width: 360px;
+  float: right;
+  background: url("../image/icon_weather.png") no-repeat 0 38px;
+}
+
+.weather-inner {
+  padding: 28px 0 29px 58px;
+}
+
+.weather-today {
+  display: block;
+  margin-bottom: 1px;
+}
+
+.weather-today .temp {
+  font-size: 25px;
+  float: left;
+  line-height: 39px;
+}
+
+.weather-today .symbol {
+  float: left;
+}
+
+.weather-today .symbol em {
+  font-size: 25px;
+  margin-top: 1px;
+  display: inline-block;
+}
+
+.weather-today .text {
+  float: left;
+  margin-top: 11px;
+  margin-left: 16px;
+  letter-spacing: -1.6px;
+  font-weight: normal;
+}
+
+.weather-dust a {
+  font-size: 0;
+  display: block;
+}
+
+.weather-dust a em:nth-child(1),
+.weather-dust a em:nth-child(2) {
+  font-size: 13px;
+  letter-spacing: -1.5px;
+  margin-right: 5px;
+}
+
+.weather-dust a .text {
+  font-size: 14px;
+  color: #26890c;
+  margin-left: 1px;
+}
+
+.weather .my-soul {
+  position: absolute;
+  top: 40px;
+  right: 0;
+}

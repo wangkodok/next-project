@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+.media {
+  margin-bottom: 55px;
+}
+
+.media .line {
+  height: 2px;
+  margin: 46px 0 50px;
+  background-color: #000;
+}
+
+.content-media .seoul-video,
+.content-media .seoul-news,
+.content-media .seoul-sns {
+  float: left;
+}
+
+.content-media .seoul-sns .contents-title {
+  font-size: 22px;
+}
+
+.seoul-video {
+  float: left;
+  margin-right: 20px;
+}
+
+.seoul-video figure {
+  position: relative;
+  margin-top: 9px;
+}
+
+.seoul-video figure img {
+  vertical-align: top;
+}
+
+.seoul-video figure figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 9px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.seoul-news .list {
+  margin-top: 17px;
+  width: 500px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.seoul-news .list .item {
+  margin-bottom: 13px;
+}
+
+.seoul-news .list .item a {
+  display: block;
+  font-size: 16px;
+  color: #555555;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.seoul-news .item .text {
+  float: left;
+  margin-right: 23px;
+  display: block;
+  font-weight: 400;
+  color: #09ac43;
+}
+
+.seoul-news .item .text-desc {
+  float: left;
+  width: 399px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: -0.5px;
+}
+
+.content-media .seoul-sns {
+  margin-top: 2px;
+  float: right;
+  height: 194px;
+  border: 2px solid #e6e6e6;
+  border-radius: 10px;
+  position: relative;
+  background: url("../image/box7_contents7_img7.jpg") no-repeat 0 45px / 100%;
+  width: 350px;
+  padding: 6px 13px 15px;
+  box-sizing: border-box;
+}
+
+.seoul-sns .list {
+  position: absolute;
+  top: 88px;
+  left: 21px;
+}
+
+.seoul-sns .item {
+  float: left;
+  margin-right: 4px;
+}
+
+.seoul-sns .item .icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("../image/icon_sns_logo.png") no-repeat;
+}
+
+.seoul-sns .item:nth-child(1) .icon {
+  background-position: -40px 0;
+}
+
+.seoul-sns .item:nth-child(2) .icon {
+  background-position: 0px 0px;
+}
+
+.seoul-sns .item:nth-child(3) .icon {
+  background-position: -160px 0px;
+}
+
+.seoul-sns .item:nth-child(4) .icon {
+  background-position: -81px 0px;
+}
+
+.seoul-sns .item:nth-child(5) .icon {
+  background-position: -121px 0px;
+}
+
+.seoul-sns .item:nth-child(6) .icon {
+  background-position: -201px 0px;
+}
+
+.seoul-sns .item:nth-child(7) .icon {
+  background-position: -241px 0px;
+}
+
+.seoul-sns .more-link {
+  position: absolute;
+  top: 12px;
+  right: 0px;
+  font-size: 15px;
+  color: #7d7d7d;
+  padding-right: 29.5px;
+  font-weight: 600;
+}
+
+.seoul-sns .more-link::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 13px;
+  width: 12px;
+  height: 12px;
+  background: url("../image/icon_set_common.png") no-repeat -63px -262px;
+}
+
+.banner-bundle .list {
+  margin-bottom: 10px;
+}
+
+.banner-bundle .item {
+  float: left;
+  margin-right: 43px;
+}
+
+.banner-bundle .item img {
+  vertical-align: top;
+}
+
+.banner-bundle .item:last-child {
+  margin-right: 0px;
+}
+
+.banner-bundle .control {
+  position: relative;
+  height: 22px;
+}
+
+.banner-bundle .control .area {
+  position: absolute;
+  top: 0;
+  right: 1px;
+}
+
+.banner-bundle .page-control {
+  float: left;
+  margin-right: 6px;
+}
+
+.banner-bundle .page-control span {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.banner-bundle .page-control .first,
+.banner-bundle .page-control .play,
+.banner-bundle .page-control .last {
+  float: left;
+}
+
+.banner-bundle .button-control {
+  float: left;
+}
+
+.banner-bundle .button-control button {
+  float: left;
+  width: 22px;
+  height: 22px;
+  margin-right: -1px;
+  border: 1px solid #999;
+  background: url("../image/icon_set_common.png") no-repeat;
+}
+
+.banner-bundle .button-control .prev {
+  background-position: -45px -43px;
+}
+
+.banner-bundle .button-control .play {
+  background-position: -65px -43px;
+}
+
+.banner-bundle .button-control .next {
+  background-position: -86px -43px;
+}

@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+.sec-new {
+  margin-bottom: 28px;
+}
+
+.sec-new .contents-new {
+  position: relative;
+}
+
+.contents-new .list {
+  margin-top: 19px;
+}
+
+.contents-new .item {
+  width: 273px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.contents-new .item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.contents-new .item a {
+  display: block;
+}
+
+.contents-new .item .title {
+  position: absolute;
+  top: 156px;
+  left: 0;
+  z-index: 1;
+  width: 82px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #d76000;
+}
+
+.contents-new .item figure {
+  overflow: hidden;
+}
+
+.contents-new .item img {
+  vertical-align: top;
+  transition: all 0.5s ease;
+}
+
+.contents-new .item img:hover {
+  transform: scale(1.2);
+}
+
+.contents-new .item .desc {
+  margin-top: 15px;
+  word-break: keep-all;
+  letter-spacing: -0.5px;
+}
+
+.contents-new .more-link {
+  position: absolute;
+  top: 16px;
+  right: -9px;
+  font-size: 15px;
+  color: #7d7d7d;
+  padding-right: 30px;
+}
+
+.contents-new .more-link::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 9px;
+  width: 12px;
+  height: 12px;
+  background: url("../image/icon_set_common.png") no-repeat -63px -262px;
+}
