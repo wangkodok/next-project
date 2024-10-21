@@ -42,7 +42,7 @@ caption {
 a {
   color: #222;
   text-decoration: none;
-  display: block;
+  /* display: block; */
 }
 
 /* 폰트 초기화 */
