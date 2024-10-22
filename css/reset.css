@@ -99,7 +99,7 @@ img {
   overflow: hidden;
   font-size: 0;
   line-height: 0;
-  text-indent: -9999;
+  text-indent: -9999px;
 }
 
 .ir_wa {
